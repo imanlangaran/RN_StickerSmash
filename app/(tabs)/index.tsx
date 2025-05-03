@@ -1,10 +1,24 @@
 import Button from "@/components/Button";
-import { Link } from "expo-router";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
+import * as ImagePicker from "expo-image-picker";
 
 const PlaceholderImage = require("@/assets/images/background-image.png");
 
 export default function Index() {
+  const pickImageAsync = async () => {
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaType: ["image"],
+      allowsEditing: true,
+      quality: 1,
+    });
+
+    if(!result.canceled){
+      console.log(result);
+    } else{
+      alert('You did not select any image')
+    }
+  };
+
   return (
     <View style={style.container}>
       <View style={style.imageContainer}>
@@ -26,7 +40,7 @@ const style = StyleSheet.create({
   },
   imageContainer: {
     flex: 1,
-    paddingTop:28
+    paddingTop: 28,
   },
   footerContainer: {
     flex: 1 / 3,
