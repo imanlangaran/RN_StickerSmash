@@ -4,7 +4,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 ## To continue
 
-https://docs.expo.dev/tutorial/build-a-screen/
+https://docs.expo.dev/tutorial/gestures/
 
 ## Get started
 
