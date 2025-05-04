@@ -4,9 +4,13 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 ## To continue
 
-https://docs.expo.dev/tutorial/platform-differences/
+https://docs.expo.dev/tutorial/configuration/
 
 npx expo install react-native-view-shot expo-media-library
+npm install dom-to-image
+ => 
+npx expo install react-native-view-shot expo-media-library dom-to-image
+
 
 ## Get started
 
