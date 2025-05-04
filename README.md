@@ -4,7 +4,9 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 ## To continue
 
-https://docs.expo.dev/tutorial/screenshot/
+https://docs.expo.dev/tutorial/platform-differences/
+
+npx expo install react-native-view-shot expo-media-library
 
 ## Get started
 
